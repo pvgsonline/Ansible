@@ -1,0 +1,6 @@
+-name: print the vairable
+  hosts:web
+  tasks:
+   -name: printing the variable
+      ansible.builtin.debug:
+      "this is AWS DevOps course"
