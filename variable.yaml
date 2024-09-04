@@ -1,0 +1,10 @@
+- name: variables from values
+  hosts: web
+  vars:
+    course: AWS DevOps
+    duration: 120
+  tasks:
+  - name:
+    ansible.builtin.debug:
+      msg: "im learning {{course}} from {{duration}}"
+  
