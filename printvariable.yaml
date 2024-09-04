@@ -3,4 +3,4 @@
   tasks:
    - name: printing the variable
       ansible.builtin.debug:
-      "this is AWS DevOps course"
+      msg: "this is AWS DevOps course"
