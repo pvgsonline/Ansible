@@ -1,8 +1,8 @@
 - name : install nginx service
-hosts : local
-connections : local
-become : yes
-tasks :
+  hosts : local
+  connections : local
+  become : yes
+  tasks :
 - name : installing nginx service
   ansible.builtin.package:
     name : nginx
