@@ -1,5 +1,6 @@
 name : install nginx service
 hosts : local
+connections : local
 become : yes
 tasks :
 - name : installing nginx service
@@ -12,4 +13,3 @@ tasks :
   service : nginx
   state : started
 
-  
