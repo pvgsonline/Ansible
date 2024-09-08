@@ -1,4 +1,4 @@
-name : install nginx service
+- name : install nginx service
 hosts : local
 connections : local
 become : yes
