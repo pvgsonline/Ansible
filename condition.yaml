@@ -15,6 +15,6 @@
   - name: print this if number is greater than 10
     ansible.builtin.debug:
      msg: "given number {{ my_number }} is greater than 10"
-    when: my_nymebr > 10
+    when: my_number > 10
 
   
