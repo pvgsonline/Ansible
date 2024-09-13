@@ -1,0 +1,12 @@
+- name: command vs shell
+  hosts: local
+  connection: local
+  tasks:
+  - name: redirect a file
+    ansible.bulitin.shell: ls -ltr > /tmp/output.txt
+  
+  - name: check a process
+    ansible.builtin.shell: ps -ef | grep ssh
+
+  - name: list file
+    ansible.builtin.command: ls -ltr
