@@ -3,7 +3,7 @@
   connection: local
   tasks:
   - name: redirect a file
-    ansible.bulitin.shell: ls -ltr > /tmp/output.txt
+    ansible.builtin.shell: ls -ltr > /tmp/output.txt
   
   - name: check a process
     ansible.builtin.shell: ps -ef | grep ssh
