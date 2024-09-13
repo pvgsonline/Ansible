@@ -1,10 +1,11 @@
 - name: loops demo
   hosts: local
+  conenction: local
   tasks:
-   -name: print the name
-    ansible.builtin.debug:
-     msg: " name is {{ item }} "
-    loop:
+   - name: print the name
+     ansible.builtin.debug:
+      msg: " name is {{ item }} "
+     loop:
       - Santhosh
       - venu
       - gopal
