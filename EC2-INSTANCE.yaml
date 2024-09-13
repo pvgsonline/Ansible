@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   become: yes
-  var:
-  subnet_id: subnet-01e31da78ddb9aaba
-  ami_id: vpc-082bc5ac39b1d8012
-  sg_id: sg-083814f2f8d4c8712
+  vars:
+  subnet_id: "subnet-01e31da78ddb9aaba"
+  ami_id: "ami-09c813fb71547fc4f"
+  sg_id: "sg-083814f2f8d4c8712"
   instances:
    - mysql
    - frontend
