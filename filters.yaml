@@ -11,3 +11,9 @@
       greeting: hello everyone
     ansible.builtin.debug:
       msg: " {{ greeting | upper }} "
+
+  - name: print unique
+    vars:
+      numbers: [1,2,1,3,3,45]
+    ansible.builtin.debug:
+      msg: " {{ numbers | unique }} "
