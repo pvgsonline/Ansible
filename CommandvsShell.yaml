@@ -8,7 +8,7 @@
   
   - name: check a process
     ansible.builtin.shell: ps -ef | grep ssh
-    regitser: output
+    register: output
 
   - name: list file
     ansible.builtin.command: ls -ltr
