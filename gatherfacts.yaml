@@ -1,6 +1,6 @@
-name: gathering facts
-hosts: local
-tasks:
- - name: print the facts
-   ansible.builtin.debug:
-      msg: " {{ ansible_facts }}"
+- name: gathering facts
+  hosts: local
+  tasks:
+    - name: print the facts
+      ansible.builtin.debug:
+        msg: " {{ ansible_facts }} "
