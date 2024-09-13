@@ -4,9 +4,12 @@
   tasks:
   - name: redirect a file
     ansible.builtin.shell: ls -ltr > /tmp/output.txt
+    register: output
   
   - name: check a process
     ansible.builtin.shell: ps -ef | grep ssh
+    regitser: output
 
   - name: list file
     ansible.builtin.command: ls -ltr
+    register: output
