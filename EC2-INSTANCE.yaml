@@ -1,7 +1,6 @@
 - name: create ec2 instance and r53 records
   hosts: local
   connection: local
-  become: yes
   vars:
     subnet_id: "subnet-01e31da78ddb9aaba"
     ami_id: "ami-09c813fb71547fc4f"
